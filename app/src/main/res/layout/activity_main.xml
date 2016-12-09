@@ -128,14 +128,16 @@
                 <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="66dp"
-                    android:id="@+id/RG">
+                    android:id="@+id/RG"
+                    android:checkedButton="@+id/radioButton3">
 
                     <RadioButton
                         android:text="기본할인(5% 할인)"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/radioButton3"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        android:checked="false" />
 
                     <RadioButton
                         android:text="현금할인(10%할인)"
@@ -155,7 +157,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="72dp"
-                    app:srcCompat="@mipmap/ic_launcher"
+                    app:srcCompat="@drawable/s1"
                     android:id="@+id/imageView"
                     android:layout_weight="0.05" />
             </LinearLayout>
@@ -166,14 +168,14 @@
                 android:layout_height="wrap_content">
 
                 <Button
-                    android:text="Button"
+                    android:text="예약완료"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/button5"
                     android:layout_weight="1" />
 
                 <Button
-                    android:text="Button"
+                    android:text="시간예약(GO)"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/button4"
@@ -187,19 +189,19 @@
                 android:weightSum="1">
 
                 <TextView
-                    android:text="TextView"
+                    android:text="총 명수 "
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView8" />
 
                 <TextView
-                    android:text="TextView"
+                    android:text="할인 금액 "
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView9" />
 
                 <TextView
-                    android:text="TextView"
+                    android:text="결제 금액 "
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView10" />
@@ -223,33 +225,40 @@
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/RG2">
+                android:orientation="horizontal"
+                android:id="@+id/RG2"
+                android:visibility="visible">
 
                 <RadioButton
-                    android:text="RadioButton"
+                    android:text="일자설정"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/radioButton11"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:visibility="visible" />
 
                 <RadioButton
-                    android:text="RadioButton"
+                    android:text="시간 설정"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/radioButton10"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:visibility="visible" />
 
             </RadioGroup>
-
-            <CalendarView
-                android:layout_width="match_parent"
-                android:layout_height="352dp"
-                android:id="@+id/calendarView" />
 
             <TimePicker
                 android:layout_width="match_parent"
                 android:layout_height="361dp"
-                android:id="@+id/timePicker" />
+                android:id="@+id/timePicker"
+                android:visibility="gone" />
+
+            <CalendarView
+                android:layout_width="match_parent"
+                android:layout_height="352dp"
+                android:id="@+id/calendarView"
+                android:visibility="visible" />
 
             <LinearLayout
                 android:orientation="horizontal"
