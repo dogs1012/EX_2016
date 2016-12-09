@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         BTN1=(Button)findViewById(R.id.button4);
         BTN2=(Button)findViewById(R.id.button5);
         BTN3=(Button)findViewById(R.id.button6);
-        BTN3=(Button)findViewById(R.id.button7);
+        BTN4=(Button)findViewById(R.id.button7);
         LL1 =(LinearLayout)findViewById(R.id.LL1);
         LL2 =(LinearLayout)findViewById(R.id.LL2);
 
@@ -136,29 +136,36 @@ public class MainActivity extends AppCompatActivity {
                     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                                 if (RB4.isChecked()) {
                                      cal.setVisibility(View.VISIBLE);
-                                  TP1.setVisibility(View.INVISIBLE);
+                                  TP1.setVisibility(View.GONE);
                                     }
                           }
                     });
-               RB5.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        RB5.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                      @Override
                        public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                             if (RB5.isChecked()) {
                                      TP1.setVisibility(View.VISIBLE);
-                                    cal.setVisibility(View.INVISIBLE);
+                                    cal.setVisibility(View.GONE);
                                    }
                            }
                    });
 
 
 
-
-
-
-
-    }
+        BTN3.setOnClickListener(new View.OnClickListener() {
+                      @Override
+                    public void onClick(View view) {
+                             LL1.setVisibility(View.VISIBLE);;
+                            LL2.setVisibility(View.INVISIBLE);
+                           }
+                    });
+           }
 
 
 
 
 }
+
+
+
+

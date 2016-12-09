@@ -256,7 +256,7 @@
 
             <CalendarView
                 android:layout_width="match_parent"
-                android:layout_height="352dp"
+                android:layout_height="258dp"
                 android:id="@+id/calendarView"
                 android:visibility="visible" />
 
@@ -266,14 +266,14 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:text="Button"
+                    android:text="예약완료"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/button7"
                     android:layout_weight="1" />
 
                 <Button
-                    android:text="Button"
+                    android:text="이전으로"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/button6"
