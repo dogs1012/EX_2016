@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         RB1=(RadioButton)findViewById(R.id.radioButton3);
         RB2=(RadioButton)findViewById(R.id.radioButton5);
         RB3=(RadioButton)findViewById(R.id.radioButton4);
-
+        IV=(ImageView)findViewById(R.id.imageView);
         FM =(FrameLayout)findViewById(R.id.Frame);
         ET1=(EditText) findViewById(R.id.editText);
         ET2=(EditText) findViewById(R.id.editText2);
@@ -100,6 +100,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
         RG = (RadioGroup) findViewById(R.id.RG);
 
         RG.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -115,16 +117,16 @@ public class MainActivity extends AppCompatActivity {
                                 }
                            }
                 });
-                BTN2 = (Button) findViewById(R.id.button4);
 
 
-                BTN2.setOnClickListener(new View.OnClickListener() {
+                BTN1.setOnClickListener(new View.OnClickListener() {
                      @Override
                     public void onClick(View view) {
                             LL1.setVisibility(View.INVISIBLE);
                              LL2.setVisibility(View.VISIBLE);
                          }
                   });
+
 
 
         TP1 =(TimePicker)findViewById(R.id.timePicker);
